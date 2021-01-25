@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Amazon.SellingPartnerAPI.Simple2\**" />
+    <EmbeddedResource Remove="Amazon.SellingPartnerAPI.Simple2\**" />
+    <None Remove="Amazon.SellingPartnerAPI.Simple2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RestSharp" Version="105.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="resources\" />
+    <Folder Include="resources\swagger-codegen\" />
+    <Folder Include="resources\swagger-codegen\templates\" />
+  </ItemGroup>
+</Project>
